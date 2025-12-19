@@ -7,6 +7,9 @@
   3. Controlled and Uncontrolled form.</br>
   4. Pitfalls and best practices.</br>
 
-  
+
+<h5>State Vs Ref</h5>
+
+<p>State is the source of truth for the data, and state is reactive means when ever any changes happens to the state, it will trigger the rerender.</p>
 
 
