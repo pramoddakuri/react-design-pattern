@@ -83,6 +83,8 @@ Modal.Footer = ModalFooter;
 export default Modal;
 ```
 
+<h3>React treats functions as Objects</h3>
+
 **If a function is an object, how can it be rendered to the DOM?**
 
 Because **JavaScript functions are both:**
@@ -227,3 +229,6 @@ Totally allowed, totally normal.
 ### ✔ When rendering
 
 React ignores the properties and **calls the component function** to get the UI.
+
+
+
