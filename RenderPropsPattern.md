@@ -44,3 +44,4 @@ Messy Bike Pattern also looks the same.
 
 <h4>The Render Props Pattern</h4>
 
+**A render prop is a prop, that expects a function, that return a JSX.**
