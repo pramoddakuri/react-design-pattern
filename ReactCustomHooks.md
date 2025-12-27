@@ -98,3 +98,20 @@ function UserList() {
 }
 ```
 
+<h3>What is Hooks in React</h3>
+Hooks look like a simple javascript functions, but they are not normal utility funcitons, they are deeply integrated with Reacts rendering engine.
+
+A normal js funciton are not aware of
+<ul>
+  <li>Has no knowledge about react</li>
+  <li>Cannot store react state</li>
+  <li>Cannot trigger re-renders</li>
+  <li>Cannot hook into React life cycle</li>
+</ul>
+
+A hook like useState() talks directly to React’s internal engine.
+It tells React:
+
+“Hey React, store this state for this component instance.”
+“React, re-render this component when the state changes.”
+“React, run this side-effect after rendering.”
