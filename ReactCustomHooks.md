@@ -111,7 +111,8 @@ A normal js funciton are not aware of
 
 A hook like useState() talks directly to React’s internal engine.
 It tells React:
-
-“Hey React, store this state for this component instance.”
-“React, re-render this component when the state changes.”
-“React, run this side-effect after rendering.”
+<ul>
+<li>Hey React, store this state for this component instance.</li>
+<li>React, re-render this component when the state changes.</li>
+<li>React, run this side-effect after rendering.</li>
+</ul>
