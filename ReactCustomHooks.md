@@ -119,12 +119,12 @@ It tells React:
 
 <h5> Why are they called Hooks?</h5>
 <p>Because they “hook into” React’s internal system.
-useState() hooks into:
-➡ the component’s state storage
-useEffect() hooks into:
-➡ React’s commit phase (after DOM updates)
-useContext() hooks into:
-➡ the context subscription system
-useMemo() hooks into:
-➡ memoization during re-renders
+useState() hooks into:<br/>
+➡ the component’s state storage<br/>
+useEffect() hooks into:<br/>
+➡ React’s commit phase (after DOM updates)<br/>
+useContext() hooks into:<br/>
+➡ the context subscription system<br/>
+useMemo() hooks into:<br/>
+➡ memoization during re-renders<br/>
 Each Hook is a “hook point” into React.</p>
