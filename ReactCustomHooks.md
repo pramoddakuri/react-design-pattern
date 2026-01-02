@@ -132,5 +132,4 @@ Each Hook is a “hook point” into React.</p>
 
 <h3>Built in Hooks</h3>
 
-[Link to react cheat sheet:] (https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazRsV2FzU00weWlmcHVmUDA3NTFoTEdUR3dRd3xBQ3Jtc0tuX2ViNnBQNmNqVjE1c0FTM25ub2VKdm5adE5TOHZmVFBoZnBHdWVLMnFCcWttQXlwY29GY0cyUFB4c3pTbS1JakYwSUZPcVMycUZRTjBjUHdLdGh5TzdzWmNDQXIwM0ozbkNMeTIxVG8tQmxOM0VlQQ&q=https%3A%2F%2Ftapascript.io%2Fbooks%2Freact-hooks-cheatsheet&v=fhwvqTry_Vg)
-``
+[Link to react cheat sheet:] (https://www.tapascript.io/books/react-hooks-cheatsheet)
