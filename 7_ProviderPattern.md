@@ -1,7 +1,7 @@
 <h2>Provider Pattern</h2>
 
 Prop drilling.
-<img width="1069" height="709" alt="image" src="https://github.com/user-attachments/assets/8a1b81b2-5f24-407c-9783-da1f7e77d063" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/8a1b81b2-5f24-407c-9783-da1f7e77d063" />
 
 <h3>Provider & Context</h3>
 
