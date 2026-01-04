@@ -181,4 +181,7 @@ export default ThemeSwitcher;
 
 ```
 
-
+<h3>Pitfall</h3>
+1. Do not over engineer.
+2. Avoid unneseccasry rerendering.
+3. Handle cleanup.( when our hooks looks for event listners, if not cleared leads to menory leaks)
