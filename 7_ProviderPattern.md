@@ -14,3 +14,42 @@ Steps to create a context
   <li>Use the data from Context wherever needed.</li>
 </ul>
 
+<h4>Create a context</h4>
+
+```jsx
+import { createContext } from "react";
+
+const ThemeContext = createContext();
+const BrandContext = createContext();
+
+export { ThemeContext, BrandContext };
+```
+
+<h4>Create a Provider</h4>
+
+```jsx
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+
+import { ThemeContext } from '../context';
+
+const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState(false);
+
+  const toggleTheme = () => {
+    setTheme((prev) => !prev);
+    document.body.classList.toggle("dark");
+  };
+
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
+ThemeProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default ThemeProvider;
+```
