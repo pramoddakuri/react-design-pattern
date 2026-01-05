@@ -127,3 +127,16 @@ function App() {
 
 export default App;
 ```
+
+<h4>Use Cases</h4>
+<ul>
+  <li>once authenitation is done, we can store the token and use it</li>
+  <li>Languages in websites</li>
+</ul>
+
+
+<h4>Pitfall</h4>
+Keep the scope context as narrow as possible.
+Avoid frequent updates to the state of context.
+
+<h4>Task</h4>
