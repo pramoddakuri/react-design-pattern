@@ -21,3 +21,6 @@
 ```jsx
 const [optimisticState, addOptimistic] = useOptimistic(currentState, updateFn)
 ```
+
+<img width="1241" height="553" alt="image" src="https://github.com/user-attachments/assets/544a62bd-d00c-466f-b89c-2918c2d03e17" />
+
