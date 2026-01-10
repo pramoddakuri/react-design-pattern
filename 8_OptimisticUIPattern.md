@@ -82,12 +82,12 @@ export default function LikeButton({ postId, initialLikes = 0 }) {
 
 ```
 
-What is startTransition in React?
-startTransition is a React 18 API that lets you mark certain state updates as non-urgent (a.k.a. transitions). React will prioritize urgent updates (like typing, clicking a button, focusing an input) and delay or interrupt the transition updates if needed to keep the UI feeling responsive.
+**What is startTransition in React?**<br>
+startTransition is a React 18 API that lets you mark certain state updates as non-urgent (a.k.a. transitions). React will prioritize urgent updates (like typing, clicking a button, focusing an input) and delay or interrupt the transition updates if needed to keep the UI feeling responsive.<br>
 
 Think of it as telling React: “This update can be done in the background. Don’t block the immediate interaction.”
 
-Why does startTransition exist?
+**Why does startTransition exist?**
 Before React 18, all state updates were treated equally. If a user typed into an input and that triggered a heavy re-render (e.g., filtering a big list, recalculating derived UI, updating a complex tree), the UI could stutter or lag, because React had to finish rendering before reflecting the keystroke. This led to:
 
 Janky typing experiences
@@ -129,4 +129,20 @@ function SearchBox({ items }) {
   );
 }
 
+```
+
+<h3>Error Handling & Rollback</h3>
+
+```jsx
+
+catch (err) {
+            // On error, rollback the real state (or trigger a refetch)
+            // Because we never incremented likes (real), just leave likes unchanged
+            // But we should show an error to user:
+            console.error("Like failed:", err);
+            // Optionally: show toast or set an error state
+            // And — to force the optimistic view to refresh and reflect real state — call setLikes to current value
+            setLikes((s) => s); // no-op but will cause optimistic to reflect the committed value
+            // Or you can trigger a re-fetch of the post state
+        }
 ```
