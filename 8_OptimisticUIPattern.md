@@ -146,3 +146,9 @@ catch (err) {
             // Or you can trigger a re-fetch of the post state
         }
 ```
+
+<h3>Use Cases</h3>
+
+-Real time interactions likes likes
+-posting a msg and sending
+-shopping cards add and remove instantli
